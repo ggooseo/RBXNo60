@@ -28,16 +28,19 @@ namespace RBXNo60
 
             """);
 
-            Console.ForegroundColor = ConsoleColor.Gray;
+            Console.ResetColor();
 
             roblox = Process.GetProcessesByName("RobloxPlayerBeta").FirstOrDefault();
 
             if (RobloxNotRunning())
                 return;
 
-            Console.WriteLine($"Found Roblox process ({GetRobloxLocation().Parent.Name})");
+            Console.Write("Found Roblox process ");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine($"({GetRobloxLocation().Parent.Name})");
+            Console.ResetColor();
 
-            CreateAndManageSettings();
+            ManageSettings();
 
             RestartRoblox();
 
@@ -58,7 +61,7 @@ namespace RBXNo60
             return false;
         }
 
-        private static void CreateAndManageSettings()
+        private static void ManageSettings()
         {
             string robloxRootFolder = GetRobloxLocation()?.Parent?.FullName;
 
@@ -107,7 +110,7 @@ namespace RBXNo60
                 {
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("Your GPU Supports: Vulkan");
-                    Console.ForegroundColor = ConsoleColor.Gray;
+                    Console.ResetColor();
 
                     clientAppSettingsVulkan.ENABLED = GetBoolInput("Force Vulkan [possibilty of crashes] (true/false):");
                 }
@@ -116,7 +119,7 @@ namespace RBXNo60
                 {
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine($"Your GPU Supports: {DXVersion}");
-                    Console.ForegroundColor = ConsoleColor.Gray;
+                    Console.ResetColor();
 
                     if (DXVersion.Contains("11.0") || DXVersion.Contains("11.1"))
                         clientAppSettingsDX11.ENABLED = GetBoolInput("Force DX11 [better performance on newer pcs] (true/false):");
@@ -246,7 +249,7 @@ namespace RBXNo60
         {
             Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine(prompt);
-            Console.ForegroundColor = ConsoleColor.Gray;
+            Console.ResetColor();
         }
     }
 }
