@@ -44,7 +44,9 @@ c#
 this is very userfriendly so I won't have to explain everything but the install ↓ since its complicated.
 By the way, you can add your own flags in the settings.json (if you let rbxno60 save and apply settings)!
 
-INSTALL: If it shows virus detected, its not a virus. Here are the steps to enable RBXNo60 without disabling Windows Defender for everything
+## Install
+
+If it shows virus detected, its not a virus. Here are the steps to enable RBXNo60 without disabling Windows Defender for everything
 
 * Search virus & threat protection and click open
 <img src="https://github.com/ggooseo/RBXNo60/assets/84007300/96b15cf0-035a-44eb-94cc-b1c27fecbb5e" height="500">
