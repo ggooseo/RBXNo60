@@ -8,7 +8,6 @@
         public int FIntRenderLocalLightUpdatesMin = 1;
         public int FIntDebugForceMSAASamples = 0;
 
-        public int DFIntCSGLevelOfDetailSwitchingDistance = 0;
         public int DFIntCSGLevelOfDetailSwitchingDistanceL12 = 0;
         public int DFIntCSGLevelOfDetailSwitchingDistanceL23 = 0;
         public int DFIntCSGLevelOfDetailSwitchingDistanceL34 = 0;
