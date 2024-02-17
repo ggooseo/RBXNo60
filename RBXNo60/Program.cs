@@ -16,7 +16,7 @@ namespace RBXNo60
 
         public static void Main(string[] args)
         {
-            Console.Title = $"gooseo's rbxno60 ({(Environment.Is64BitProcess ? "64" : "32")}-bit)";
+            Console.Title = $"RBXNo60 by gooseo ({(Environment.Is64BitProcess ? "64" : "32")}-bit)";
 
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("""
