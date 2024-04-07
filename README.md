@@ -7,7 +7,7 @@
   <h1 align="center">RBXNo60</h1>
 
   <p align="center">
-    simple fps uncapper and optimizer for roblox
+    a shitty simple fps uncapper and optimizer for roblox
     <br/>
     <br/>
     <a href="https://github.com/ggooseo/RBXNo60/issues">Report Bug</a>
